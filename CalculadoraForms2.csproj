@@ -92,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="calculator-icon_34473.ico" />
+    <None Include="Resources\historique-icone-de-l-historique-noir.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

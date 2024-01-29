@@ -109,7 +109,7 @@ namespace CalculadoraForms2
                 TxtResultado.Text += "0,";
                 txtOperacao.Text += "0,";
             }
-            
+
             else if (!TxtResultado.Text.Contains(","))
             {
                 TxtResultado.Text += ",";
@@ -140,7 +140,7 @@ namespace CalculadoraForms2
             }
             catch
             {
-                MessageBox.Show("Operação incorreta");
+                
             }
         }
 
@@ -160,7 +160,7 @@ namespace CalculadoraForms2
             }
             catch
             {
-                MessageBox.Show("Operação incorreta");
+                
             }
         }
 
@@ -180,7 +180,7 @@ namespace CalculadoraForms2
             }
             catch
             {
-                MessageBox.Show("Operação incorreta");
+                
             }
         }
 
@@ -200,9 +200,9 @@ namespace CalculadoraForms2
             }
             catch
             {
-                MessageBox.Show("Operação incorreta");
+                
             }
-           
+
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -219,49 +219,49 @@ namespace CalculadoraForms2
 
         private void Resultado_Click(object sender, EventArgs e)
         {
-            
-                resultado = true;
 
-                txtOperacao.Text += "=";
+            resultado = true;
 
-                if (adicao == true)
-                {
-                    TxtResultado.Text = Convert.ToString(Convert.ToDecimal(TxtResultado.Text) + calculo);
-                    txtOperacao.Text = TxtResultado.Text;
-                }
+            txtOperacao.Text += "=";
 
-                if (subtracao == true)
-                {
-                    TxtResultado.Text = Convert.ToString(Convert.ToDecimal(TxtResultado.Text) - calculo);
+            if (adicao == true)
+            {
+                TxtResultado.Text = Convert.ToString(Convert.ToDecimal(TxtResultado.Text) + calculo);
+                txtOperacao.Text = TxtResultado.Text;
+            }
 
-                    txtOperacao.Text += TxtResultado.Text;
-                }
+            if (subtracao == true)
+            {
+                TxtResultado.Text = Convert.ToString(Convert.ToDecimal(TxtResultado.Text) - calculo);
 
-
-                if (multiplicacao == true)
-                {
-                    TxtResultado.Text = Convert.ToString(Convert.ToDecimal(TxtResultado.Text) * calculo);
-
-                    txtOperacao.Text += TxtResultado.Text;
-                }
+                txtOperacao.Text += TxtResultado.Text;
+            }
 
 
-                if (divisao == true)
-                {
-                    TxtResultado.Text = Convert.ToString(calculo / Convert.ToDecimal(TxtResultado.Text));
+            if (multiplicacao == true)
+            {
+                TxtResultado.Text = Convert.ToString(Convert.ToDecimal(TxtResultado.Text) * calculo);
 
-                    txtOperacao.Text += TxtResultado.Text;
-                }
+                txtOperacao.Text += TxtResultado.Text;
+            }
+
+
+            if (divisao == true)
+            {
+                TxtResultado.Text = Convert.ToString(calculo / Convert.ToDecimal(TxtResultado.Text));
+
+                txtOperacao.Text += TxtResultado.Text;
+            }
 
 
 
-                else if (porcentagem == true)
-                {
-                    TxtResultado.Text = Convert.ToString((Convert.ToDecimal(TxtResultado.Text) / 100) * calculo);
+            else if (porcentagem == true)
+            {
+                TxtResultado.Text = Convert.ToString((Convert.ToDecimal(TxtResultado.Text) / 100) * calculo);
 
-                }
-            
-           
+            }
+
+
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -342,7 +342,7 @@ namespace CalculadoraForms2
                     }
                     break;
                 case Keys.R:
-                
+
                     break;
                 case Keys.D6:
                 case Keys.NumPad6:
@@ -388,6 +388,11 @@ namespace CalculadoraForms2
                     button10.PerformClick();
                     break;
             }
+        }
+
+        private void Calculadora_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
