@@ -50,12 +50,13 @@
             this.button10 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.Perc = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(24, 259);
             this.button1.Name = "button1";
@@ -67,6 +68,7 @@
             // 
             // button2
             // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(115, 259);
             this.button2.Name = "button2";
@@ -78,6 +80,7 @@
             // 
             // button3
             // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(213, 259);
             this.button3.Name = "button3";
@@ -89,6 +92,7 @@
             // 
             // button4
             // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(24, 353);
             this.button4.Name = "button4";
@@ -100,6 +104,7 @@
             // 
             // button5
             // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(115, 353);
             this.button5.Name = "button5";
@@ -111,6 +116,7 @@
             // 
             // button6
             // 
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(213, 353);
             this.button6.Name = "button6";
@@ -122,6 +128,7 @@
             // 
             // button7
             // 
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(24, 444);
             this.button7.Name = "button7";
@@ -133,6 +140,7 @@
             // 
             // button8
             // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(115, 444);
             this.button8.Name = "button8";
@@ -144,6 +152,7 @@
             // 
             // button9
             // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.Location = new System.Drawing.Point(213, 444);
             this.button9.Name = "button9";
@@ -188,6 +197,7 @@
             // 
             // Virgula
             // 
+            this.Virgula.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.Virgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Virgula.Location = new System.Drawing.Point(24, 531);
             this.Virgula.Name = "Virgula";
@@ -199,6 +209,7 @@
             // 
             // button0
             // 
+            this.button0.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button0.Location = new System.Drawing.Point(115, 531);
             this.button0.Name = "button0";
@@ -210,6 +221,7 @@
             // 
             // Resultado
             // 
+            this.Resultado.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.Resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Resultado.Location = new System.Drawing.Point(213, 531);
             this.Resultado.Name = "Resultado";
@@ -295,16 +307,16 @@
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // button12
+            // Perc
             // 
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(24, 208);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(67, 45);
-            this.button12.TabIndex = 21;
-            this.button12.Text = "%";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.Perc.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Perc.Location = new System.Drawing.Point(24, 208);
+            this.Perc.Name = "Perc";
+            this.Perc.Size = new System.Drawing.Size(67, 45);
+            this.Perc.TabIndex = 21;
+            this.Perc.Text = "%";
+            this.Perc.UseVisualStyleBackColor = true;
+            this.Perc.Click += new System.EventHandler(this.button12_Click);
             // 
             // Calculadora
             // 
@@ -313,7 +325,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(400, 609);
-            this.Controls.Add(this.button12);
+            this.Controls.Add(this.Perc);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button10);
@@ -372,7 +384,7 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button Perc;
     }
 }
 
