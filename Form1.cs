@@ -186,6 +186,7 @@ namespace CalculadoraForms2
 
         private void Divisao_Click(object sender, EventArgs e)
         {
+            
             this.button0.BackColor = System.Drawing.Color.Gray;
             try
             {
@@ -200,9 +201,9 @@ namespace CalculadoraForms2
             }
             catch
             {
-                
+                TxtResultado.Clear();
             }
-
+            
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -219,6 +220,7 @@ namespace CalculadoraForms2
 
         private void Resultado_Click(object sender, EventArgs e)
         {
+            
 
             resultado = true;
 
@@ -260,7 +262,7 @@ namespace CalculadoraForms2
                 TxtResultado.Text = Convert.ToString((Convert.ToDecimal(TxtResultado.Text) / 100) * calculo);
 
             }
-
+            
 
         }
 
@@ -329,8 +331,7 @@ namespace CalculadoraForms2
                     if (e.Shift)
                     {
                         Perc.PerformClick();
-                    }
-                    else
+                    } else
                     {
                         button5.PerformClick();
                     }
@@ -340,9 +341,6 @@ namespace CalculadoraForms2
                     {
                         Perc.PerformClick();
                     }
-                    break;
-                case Keys.R:
-
                     break;
                 case Keys.D6:
                 case Keys.NumPad6:
@@ -376,16 +374,18 @@ namespace CalculadoraForms2
                 case Keys.Divide:
                     Divisao.PerformClick();
                     break;
-                case Keys.Escape:
                 case Keys.Delete:
-                    button11.PerformClick();
+                    button10.PerformClick();
                     break;
                 case Keys.Oemplus:
                 case Keys.Enter:
                     Resultado.PerformClick();
                     break;
                 case Keys.Back:
-                    button10.PerformClick();
+                    button11.PerformClick();
+                    break;
+                case Keys.Escape:
+                    Fechar.PerformClick();
                     break;
             }
         }
@@ -393,6 +393,11 @@ namespace CalculadoraForms2
         private void Calculadora_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Fechar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

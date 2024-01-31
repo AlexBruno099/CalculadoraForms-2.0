@@ -51,6 +51,7 @@
             this.Perc = new System.Windows.Forms.Button();
             this.txtOperacao = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Fechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,7 +174,7 @@
             // 
             // Divisao
             // 
-            this.Divisao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Divisao.BackColor = System.Drawing.Color.Red;
             this.Divisao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Divisao.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Divisao.Location = new System.Drawing.Point(298, 192);
@@ -284,7 +285,7 @@
             // 
             // button10
             // 
-            this.button10.BackColor = System.Drawing.Color.Blue;
+            this.button10.BackColor = System.Drawing.Color.RoyalBlue;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.Location = new System.Drawing.Point(125, 192);
@@ -297,7 +298,7 @@
             // 
             // button11
             // 
-            this.button11.BackColor = System.Drawing.Color.Blue;
+            this.button11.BackColor = System.Drawing.Color.RoyalBlue;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.Location = new System.Drawing.Point(24, 192);
@@ -344,6 +345,16 @@
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
+            // Fechar
+            // 
+            this.Fechar.Location = new System.Drawing.Point(27, 120);
+            this.Fechar.Name = "Fechar";
+            this.Fechar.Size = new System.Drawing.Size(75, 23);
+            this.Fechar.TabIndex = 24;
+            this.Fechar.Text = "Fechar";
+            this.Fechar.UseVisualStyleBackColor = true;
+            this.Fechar.Click += new System.EventHandler(this.Fechar_Click);
+            // 
             // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -373,6 +384,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.Fechar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MaximizeBox = false;
@@ -410,6 +422,7 @@
         private System.Windows.Forms.Button Perc;
         private System.Windows.Forms.TextBox txtOperacao;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Fechar;
     }
 }
 
