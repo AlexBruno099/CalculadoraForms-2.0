@@ -186,24 +186,30 @@ namespace CalculadoraForms2
 
         private void Divisao_Click(object sender, EventArgs e)
         {
-            
-            this.button0.BackColor = System.Drawing.Color.Gray;
-            try
+            if (calculo != 0)
             {
-                calculo = Convert.ToDecimal(TxtResultado.Text);
-                txtOperacao.Text += "÷";
-                TxtResultado.Text = "";
+                this.button0.BackColor = System.Drawing.Color.Gray;
+                try
+                {
+                    calculo = Convert.ToDecimal(TxtResultado.Text);
+                    txtOperacao.Text += "÷";
+                    TxtResultado.Text = "";
 
-                adicao = false;
-                subtracao = false;
-                multiplicacao = false;
-                divisao = true;
+                    adicao = false;
+                    subtracao = false;
+                    multiplicacao = false;
+                    divisao = true;
+                }
+
+                catch
+                {
+                    
+                }
             }
-            catch
+            else
             {
-                TxtResultado.Clear();
+                MessageBox.Show("Tentativa de divisão por zero", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            
         }
 
         private void button10_Click(object sender, EventArgs e)
